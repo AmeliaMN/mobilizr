@@ -9,10 +9,10 @@ The package builds on many of the features that were included in the [MobilizeSi
 
 ## Usage & Installation:
 
-This is a fork of the package. To install this fork from github, be sure to have the `devtools` package installed and then run:
+To install the development version of `mobilizr` from github, be sure to have the `devtools` package installed and then run:
 
 ```{r}
-devtools::install_github("AmeliaMN/mobilizr")
+devtools::install_github("mobilizingcs/mobilizr")
 ```
 
 The functions included in the package are intended to work within the [RStudio server GUI](http://www.rstudio.com)
