@@ -3,7 +3,7 @@
 #' @import log4r
 
 
-log_config <- log4r::create.logger()
+log_config <- log4r::logger()
 
 .onLoad <- function(libname, pkgname) {
   log_path <- Sys.getenv('MOBILIZR_LOGFILE', '~/.mobilizr.log')
@@ -11,7 +11,7 @@ log_config <- log4r::create.logger()
 }
 
 logger_set <- function(logfile = NULL, level = NULL){
-  log4r::logfile(log_config) <<- logfile
+  # log4r::logger(log_config) <<- logfile
   log4r::level(log_config) <<- level
 }
 
