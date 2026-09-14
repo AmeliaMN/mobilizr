@@ -4,7 +4,9 @@
 \name{cereal}
 \alias{cereal}
 \title{Cereal data}
-\format{A data frame with 40 observations of 12 variables}
+\format{
+A data frame with 40 observations of 12 variables
+}
 \usage{
 data(cereal)
 }

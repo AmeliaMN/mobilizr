@@ -4,7 +4,9 @@
 \name{futbol}
 \alias{futbol}
 \title{Futbol Data Set}
-\format{A data frame with 55 observations of 6 variables}
+\format{
+A data frame with 55 observations of 6 variables
+}
 \source{
 USMNT data from: \url{http://www.ussoccer.com/mens-national-team/latest-roster} NFL data from: \url{http://www.profootballlogic.com/players/?position=all}
 }

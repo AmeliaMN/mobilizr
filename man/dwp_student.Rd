@@ -4,7 +4,9 @@
 \name{dwp_student}
 \alias{dwp_student}
 \title{LA Department of Water and Power (2010) Data - Student}
-\format{A data frame with 1,193 observations of 19 variables}
+\format{
+A data frame with 1,193 observations of 19 variables
+}
 \source{
 \url{https://www.ladwp.com}
 }

@@ -4,8 +4,17 @@
 \alias{map}
 \title{Make a map of points}
 \usage{
-map(x, data = parent.frame(), e, scaleby, size = 1, col = "blue",
-  zoom = 10, color, ...)
+map(
+  x,
+  data = parent.frame(),
+  e,
+  scaleby,
+  size = 1,
+  col = "blue",
+  zoom = 10,
+  color,
+  ...
+)
 }
 \arguments{
 \item{x}{Function of the form latitude~longitude}

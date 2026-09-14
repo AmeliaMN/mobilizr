@@ -4,7 +4,9 @@
 \name{cdc}
 \alias{cdc}
 \title{CDC Youth Risk Behaviour Survey Data}
-\format{A data frame with 15,624 observations of 33 variables}
+\format{
+A data frame with 15,624 observations of 33 variables
+}
 \source{
 \url{http://www.cdc.gov/HealthyYouth/yrbs/index.htm}
 }

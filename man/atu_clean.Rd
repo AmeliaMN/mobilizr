@@ -4,7 +4,9 @@
 \name{atu_clean}
 \alias{atu_clean}
 \title{American Time Use Survey Data Sample - Clean}
-\format{A data frame with 10,493 observations of 8 variables}
+\format{
+A data frame with 10,493 observations of 8 variables
+}
 \source{
 \url{http://www.bls.gov/tus/}
 }

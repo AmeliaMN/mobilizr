@@ -4,8 +4,7 @@
 \alias{tail}
 \title{Print last six observations.}
 \usage{
-tail(x, ..., data = NULL, groups = NULL, na.rm = getOption("na.rm",
-  FALSE))
+tail(x, ..., data = NULL, groups = NULL, na.rm = getOption("na.rm", FALSE))
 }
 \arguments{
 \item{x}{Formula or other object to print.}

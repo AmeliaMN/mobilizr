@@ -560,12 +560,14 @@ setMethod(
   signature(e1 = "repeater", e2="ANY"),
   function (e1, e2)
   {
-    e2_lazy <- lazyeval::f_capture(e2)
+    # e2_lazy <- lazyeval::f_capture(e2)
     #		e2unevaluated = substitute(e2)
     #		if ( ! is.function(e2) ) {
     #      frame <- parent.frame()
     #			e2 = function(){eval(e2unevaluated, envir=frame) }
     #		}
+    e2_expr <- substitute(e2)
+    e2_env <- parent.frame()
     n = e1@n
 
     cull = e1@cull
@@ -581,9 +583,9 @@ setMethod(
                 "  * Set seed with set.rseed().\n",
                 "  * Disable this message with options(`mosaic:parallelMessage` = FALSE)\n")
       }
-      parallel::mclapply( integer(n), function(...) { cull(lazyeval::f_eval(e2_lazy)) } )
+      parallel::mclapply( integer(n), function(...) { cull(eval(e2_expr, e2_env)) } )
     } else {
-      suppressWarnings(lapply( integer(n), function(...) { cull(lazyeval::f_eval(e2_lazy)) } ))
+      suppressWarnings(lapply( integer(n), function(...) { cull(eval(e2_expr, e2_env)) } ))
     }
 
     if (out.mode=='default') {  # is there any reason to be fancier?
@@ -601,14 +603,15 @@ setMethod(
       # we get mutliple parts here if expression involves, for example, ::
       # just grab last part. (paste()ing would be out of order
       alt_name <- tryCatch(
-        tail(as.character(rhs(e2_lazy)[[1]]), 1),
+        tail(as.character(e2_expr[[1]]), 1),
         error = function(e) "result"
       )
       names(result) <- nice_names(names(result))
       names(result)[names(result) == "..result.."] <-
         if(nice_names(alt_name) == alt_name) alt_name else "result"
     }
-    attr(result, "lazy") <- e2_lazy
+    attr(result, "lazy") <- e2_expr
+    attr(result, "lazy_env") <- e2_env
     if (out.mode == "data.frame") attr(result, "culler") <- cull
     return(result)
   })

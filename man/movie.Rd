@@ -4,7 +4,9 @@
 \name{movie}
 \alias{movie}
 \title{Movie Data Set}
-\format{A data frame with 5,043 observations of 16 variables}
+\format{
+A data frame with 5,043 observations of 16 variables
+}
 \source{
 \url{http://www.imdb.com}, \url{http://www.omdbapi.com}, \url{http://www.rottentomatoes.com}
 }

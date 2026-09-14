@@ -6,7 +6,7 @@
 #' To learn more about Mobilize and the Introduction to Data Science course see
 #' \href{http://www.mobilizingcs.org}{the Mobilize homepage}.
 #'
-#' @docType package
+"_PACKAGE"
 #' @name mobilizr
 NULL
 

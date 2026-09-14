@@ -4,8 +4,7 @@
 \alias{head}
 \title{Print first six observations.}
 \usage{
-head(x, ..., data = NULL, groups = NULL, na.rm = getOption("na.rm",
-  FALSE))
+head(x, ..., data = NULL, groups = NULL, na.rm = getOption("na.rm", FALSE))
 }
 \arguments{
 \item{x}{Formula or other object to print.}

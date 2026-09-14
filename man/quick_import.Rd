@@ -4,8 +4,7 @@
 \alias{quick_import}
 \title{Quick Import From Ohmage}
 \usage{
-quick_import(server = NULL, username = NULL, token = NULL,
-  campaign = NULL)
+quick_import(server = NULL, username = NULL, token = NULL, campaign = NULL)
 }
 \description{
 Quick Import From Ohmage

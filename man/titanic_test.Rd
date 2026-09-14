@@ -4,7 +4,9 @@
 \name{titanic_test}
 \alias{titanic_test}
 \title{Titanic Passenger Survivial Test Data}
-\format{A data frame with 308 observations of 8 variables}
+\format{
+A data frame with 308 observations of 8 variables
+}
 \source{
 \link{http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.html}
 }

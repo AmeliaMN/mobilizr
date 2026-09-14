@@ -4,7 +4,9 @@
 \name{arm_span}
 \alias{arm_span}
 \title{Arm Span and Height Data}
-\format{A data frame with 90 observations of 4 variables.}
+\format{
+A data frame with 90 observations of 4 variables.
+}
 \usage{
 data(arm_span)
 }

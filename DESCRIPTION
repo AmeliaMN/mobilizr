@@ -37,11 +37,13 @@ Imports:
     rpart,
     rpart.plot,
     roxygen2,
-    testthat
+    testthat,
+    lattice,
+    magrittr
 Suggests:
     visualTest
 License: GPL (>= 2)
 LazyData: TRUE
 URL: https://www.mobilizingcs.org
 Maintainer: IDSUCLA <admin@idsucla.org>
-RoxygenNote: 6.1.1
+Config/roxygen2/version: 8.0.0

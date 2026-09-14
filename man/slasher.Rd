@@ -4,7 +4,9 @@
 \name{slasher}
 \alias{slasher}
 \title{Survival status of actors and actresses in "Slasher" films}
-\format{A data frame with 485 observations of 2 variables}
+\format{
+A data frame with 485 observations of 2 variables
+}
 \usage{
 data(slasher)
 }

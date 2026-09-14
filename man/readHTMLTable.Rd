@@ -7,8 +7,6 @@
 readHTMLTable(url, which, ...)
 }
 \arguments{
-\item{url}{}
-
 \item{which}{An integer to choose which table to return. If not specified, return a list of tables.}
 
 \item{...}{see \code{rvest::html_table()}}

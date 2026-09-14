@@ -4,7 +4,9 @@
 \name{titanic}
 \alias{titanic}
 \title{Titanic Passenger Data}
-\format{A data frame with 1,000 observations of 8 variables}
+\format{
+A data frame with 1,000 observations of 8 variables
+}
 \source{
 \url{http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.html}
 }

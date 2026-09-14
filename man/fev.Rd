@@ -4,7 +4,9 @@
 \name{fev}
 \alias{fev}
 \title{Lung capacity data}
-\format{A data frame with 654 observations of 4 variables}
+\format{
+A data frame with 654 observations of 4 variables
+}
 \source{
 \url{http://ww2.amstat.org/publications/jse/v13n2/datasets.kahn.html}
 }
